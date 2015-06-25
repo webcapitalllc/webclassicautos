@@ -1,0 +1,46 @@
+$topbar-logo-height: rem-calc(46);
+
+.top-bar {
+  @include max-width-container;
+  background: none;
+
+  &.expanded {
+    background: $topbar-bg;
+    .title-area {
+      background: none;
+    }
+  }
+
+  .name {
+    img {
+      height: $topbar-logo-height;
+      margin-top: ($topbar-height - $topbar-logo-height)/2;
+    }
+  }
+
+  ul li {
+    & > a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.top-bar-landing {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 888;
+
+  .top-bar-section {
+    @media #{$topbar-media-query} {
+      li:not(.has-form) a:not(.button){
+        background: none;
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

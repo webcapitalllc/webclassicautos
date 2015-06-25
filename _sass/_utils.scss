@@ -1,0 +1,15 @@
+@mixin max-width-container(){
+  max-width: rem-calc(1200);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: rem-calc(16);
+  padding-right: rem-calc(16);
+}
+
+@function tint($color, $percentage) {
+  @return mix($color, white, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix($color, black, $percentage);
+}

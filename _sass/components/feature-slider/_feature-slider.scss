@@ -1,0 +1,61 @@
+.feature-slider {
+  position: relative;
+}
+
+.feature-slider-slides {
+  .slick-list {
+    width: 100%;
+  }
+}
+
+.feature-slider-bar {
+  background: $blue;
+  bottom: 0;
+  color: $white;
+  padding: rem-calc(10) 0;
+  position: absolute;
+  width: 100%;
+}
+
+.feature-slider-info {
+  font-size: $font-size-large;
+
+  small {
+    font-size: $base-font-size;
+  }
+}
+
+.feature-slider-nav {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  width: 100%;
+  text-align: right;
+
+  & > li {
+    display: inline;
+    & + li {
+      margin-left: rem-calc(5);
+    }
+  }
+
+  button {
+    background: none;
+    border-radius: 50%;
+    padding: 0;
+    font-size: $base-font-size;
+    margin-bottom: 0;
+    height: rem-calc(20);
+    width: rem-calc(20);
+    line-height: rem-calc(20);
+    text-align: center;
+
+    &:hover {
+      background: $blue-tint;
+    }
+
+    &.is-active {
+      background: $blue-shade;
+    }
+  }
+}
