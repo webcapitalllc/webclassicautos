@@ -2,23 +2,29 @@
 layout: default
 ---
 
-<div class="home">
+<div class="feature-slider">
+  <div class="feature-slider-slides">
+    <div><img src="/images/1467043.jpg" /></div>
+    <div><img src="/images/1467043.jpg" /></div>
+    <div><img src="/images/1467043.jpg" /></div>
+  </div>
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="feature-slider-bar">
+    <div class="row l-container">
+      <div class="columns small-6">
+        <div class="feature-slider-info">
+          1947 Aston Martin <small>$200,000</small>
+        </div>
+      </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+      <div class="columns small-6">
+        <ul class="feature-slider-nav">
+          <li><button type="button">1</button></li>
+          <li><button type="button">2</button></li>
+          <li><button type="button">3</button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 >>>>>>> Set up empty jekyll site --greg
