@@ -1423,7 +1423,7 @@ $button-bg-hover: $primary-color-tint;
 $topbar-bg: rgba($white, 0.5);
 
 // Height and margin
-$topbar-height: rem-calc(66);
+$topbar-height: rem-calc(85);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1436,7 +1436,7 @@ $topbar-link-color-hover: $blue;
 $topbar-link-color-active: $blue-shade;
 $topbar-link-color-active-hover: $blue-shade;
 // $topbar-link-weight: $font-weight-normal;
-$topbar-link-font-size: $base-font-size;
+$topbar-link-font-size: $font-size-large;
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 $topbar-link-bg: false;
 $topbar-link-bg-hover: false;

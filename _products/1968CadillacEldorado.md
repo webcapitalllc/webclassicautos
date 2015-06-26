@@ -2,8 +2,38 @@
 layout: product
 hilite: 1968
 name: Cadillac Eldorado
-hero: /images/1467043.jpg
 price: $000,000,000
+hero: /images/1467043.jpg
+
+details:
+- type: General
+  specs:
+    year: 1964
+    mileage: 999,999
+    location: Sarasota, FL
+
+- type: Interior
+  specs:
+    color: Black Pearl
+    condition: Excellent
+    seats: 6
+    material: Vinyl
+    restoration: Fully Restored
+
+- type: Exterior
+  specs:
+    condition: Excellent
+    convertable: No
+    doors: 4-Door
+    restoration: Fully Restored
+
+- type: Engine
+  specs:
+    condition: Rebuilt
+    engine: 1.4L Engine
+    horsepower: 275HP
+    engine size: 376
+    history: Fully Restored
 
 teaser: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie, lectus eu lacinia porttitor, massa urna porta ipsum, nec viverra dolor tortor eleifend odio. Proin sed placerat quam. Aliquam turpis velit, lacinia nec diam imperdiet, rhoncus gravida eros.
 

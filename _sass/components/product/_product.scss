@@ -42,3 +42,26 @@
     font-weight: $font-weight-light;
   }
 }
+
+.product-specs-header {
+  border-bottom: 1px solid darken($white, 10%);
+  color: $gray-medium;
+  font-size: $base-font-size;
+  font-weight: $font-weight-medium;
+}
+
+.product-specs-list {
+  font-size: $base-font-size;
+  margin-bottom: rem-calc(20) !important;
+
+  &:last-child {
+    margin-bottom: rem-calc(40) !important;
+  }
+}
+
+.product-price {
+  font-size: $h3-font-size;
+  small {
+    margin-right: rem-calc(10);
+  }
+}

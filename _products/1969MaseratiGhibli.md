@@ -2,8 +2,38 @@
 layout: product
 hilite: 1969
 name: Maserati Ghibli
-hero: /images/1467043.jpg
 price: $000,000,000
+hero: /images/1467043.jpg
+
+details:
+- type: General
+  specs:
+    year: 1964
+    mileage: 999,999
+    location: Sarasota, FL
+
+- type: Interior
+  specs:
+    color: Black Pearl
+    condition: Excellent
+    seats: 6
+    material: Vinyl
+    restoration: Fully Restored
+
+- type: Exterior
+  specs:
+    condition: Excellent
+    convertable: No
+    doors: 4-Door
+    restoration: Fully Restored
+
+- type: Engine
+  specs:
+    condition: Rebuilt
+    engine: 1.4L Engine
+    horsepower: 275HP
+    engine size: 376
+    history: Fully Restored
 
 teaser: Tortor eleifend odio. Proin sed placerat quam. Aliquam turpis velit, lacinia nec diam imperdiet, rhoncus gravida eros.
 

@@ -5,12 +5,12 @@ layout: default
 <div class="product-page">
   <div class="row">
     <div class="columns small-12 medium-8">
-      <h3 class="product-name"><span class="hilite">{{page.hilite}}</span> {{page.name}}</h3>
+      <h2 class="product-name"><span class="hilite">{{page.hilite}}</span> {{page.name}}</h2>
       <h6 class="product-teaser">{{page.teaser}}</h6>
     </div>
 
     <div class="columns small-12 medium-4 medium-text-right">
-      <h3 class="product-price">{{page.price}}</h3>
+      <h3>{{page.price}}</h3>
       <button class="button small">Buy Now</button>
     </div>
   </div>
@@ -19,17 +19,29 @@ layout: default
     <div class="columns small-12">
       <div class="product-details">
         <div class="row">
-          <div class="columns small-8">
-            <h3 class="product-name"><span class="hilite">{{page.hilite}}</span> {{page.name}}</h3>
+          <div class="columns small-12 medium-7 large-8">
+            <h2 class="product-name"><span class="hilite">{{page.hilite}}</span> {{page.name}}</h2>
             <div class="product-summary">
               {% assign paragraphs = page.summary | newline_to_br | split: '<br />' %}
               {% for paragraph in paragraphs %}<p>{{ paragraph }}</p>{% endfor %}
             </div>
           </div>
 
-          <div class="columns small-4">
+          <div class="columns small-12 medium-5 large-4">
+            {% for detail in page.details %}
+              <h6 class="product-specs-header">{{ detail.type | capitalize }}</h6>
 
+              <dl class="row product-specs-list medium-text-right">
+              {% for spec in detail.specs %}
+                <dt class="columns small-6">{{ spec[0] | capitalize}}</dt>
+                <dd class="columns small-6">{{ spec[1] }}</dd>
+              {% endfor %}
+              </dl>
+            {% endfor %}
           </div>
+        </div>
+        <div class="product-price medium-text-right">
+          <small>Asking Price</small> {{page.price}}
         </div>
       </div>
     </div>
