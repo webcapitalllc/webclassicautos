@@ -75,12 +75,14 @@ $include-html-global-classes: $include-html-classes;
 // Web Capital Settings
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 $gray: #2d2d2d;
+$gray-light: #f2f2f2;
 $blue: #0032a0;
 $blue-shade: #003265;
 $blue-tint: tint($blue, 25%);
 $white: #fff;
 
 $base-font-size: rem-calc(14);
+$font-size-small: rem-calc(12);
 $font-size-large: rem-calc(18);
 
 
@@ -136,7 +138,7 @@ $font-family-sans-serif: "Fira Sans", "Helvetica Neue", Helvetica, Roboto, Arial
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-// $body-bg: $white;
+$body-bg: $gray-light;
 $body-font-color: $gray;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;

@@ -2,8 +2,8 @@
   max-width: rem-calc(1200);
   margin-left: auto;
   margin-right: auto;
-  padding-left: rem-calc(16);
-  padding-right: rem-calc(16);
+  padding-left: $column-gutter/2;
+  padding-right: $column-gutter/2;
 }
 
 @function tint($color, $percentage) {
