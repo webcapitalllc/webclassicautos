@@ -1,6 +1,7 @@
 .site-header {
   background: $white;
   border-bottom: 1px solid darken($body-bg, 3%);
+  margin-bottom: rem-calc(40);
 }
 
 .site-header-landing {
