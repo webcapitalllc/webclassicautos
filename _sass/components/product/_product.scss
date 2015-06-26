@@ -2,7 +2,8 @@
   margin-bottom: rem-calc(20);
 }
 
-.product {
+.product,
+.product-details {
   background:$white;
   padding: rem-calc(20);
 }
@@ -30,4 +31,14 @@
 
 .product-page {
   padding-top: rem-calc(40);
+}
+
+.product-details {
+  margin-bottom: rem-calc(70);
+}
+
+.product-summary {
+  p {
+    font-weight: $font-weight-light;
+  }
 }
