@@ -2,4 +2,16 @@
 layout: default
 ---
 
-{{ content }}
+<div class="product-page">
+  <div class="row">
+    <div class="columns small-12 medium-8">
+      <h3 class="product-name"><span class="hilite">{{page.hilite}}</span> {{page.name}}</h3>
+      <h6 class="product-teaser">{{page.teaser}}</h6>
+    </div>
+
+    <div class="columns small-12 medium-4 medium-text-right">
+      <h3 class="product-price">{{page.price}}</h3>
+      <button class="button small">Buy Now</button>
+    </div>
+  </div>
+</div>
