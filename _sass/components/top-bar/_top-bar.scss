@@ -26,21 +26,3 @@ $topbar-logo-height: rem-calc(46);
     }
   }
 }
-
-.top-bar-landing {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 888;
-
-  .top-bar-section {
-    @media #{$topbar-media-query} {
-      li:not(.has-form) a:not(.button){
-        background: none;
-        &:last-child {
-          padding-right: 0;
-        }
-      }
-    }
-  }
-}

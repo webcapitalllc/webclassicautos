@@ -1,0 +1,24 @@
+.site-header {
+  background: $white;
+  border-bottom: 1px solid darken($body-bg, 3%);
+}
+
+.site-header-landing {
+  background: none;
+  border-bottom: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 888;
+
+  .top-bar-section {
+    @media #{$topbar-media-query} {
+      li:not(.has-form) a:not(.button){
+        background: none;
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
