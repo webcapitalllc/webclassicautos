@@ -1,12 +1,8 @@
----
-layout: default
----
-
 <div class="row">
   <div class="columns small-12">
-    <h3 class="products-header">Inventory</small></h3>
+    <h3 class="products-header">{{include.heading}} <small><a href="/inventory">View All</a></small></h3>
     <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
-      {% for product in site.products %}
+      {% for product in site.products limit:include.limit %}
       <li>
         {% include product-card.html product=product %}
       </li>

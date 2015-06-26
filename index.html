@@ -28,23 +28,4 @@ layout: default
   </div>
 </div>
 
-<div class="row">
-  <div class="columns small-12">
-    <h3 class="products-header">Featured Inventory <small><a href="/inventory">View All</a></small></h3>
-    <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
-      {% for product in site.products limit:7 %}
-      <li>
-        <div class="product">
-          <img class="product-thumb" src="{{product.hero}}" />
-          <h5 class="product-name"><span class="hilite">{{product.hilite}}</span> {{product.name}}</h5>
-          <h6 class="product-teaser">{{product.teaser | truncate: 65}}</h6>
-          <div class="clearfix">
-            <div class="left">{{product.price}}</div>
-            <div class="right"><a href="{{product.url}}">Details</a></div>
-          </div>
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
+{% include product-group.html heading="Featured Inventory" limit=7 %}

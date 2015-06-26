@@ -1,0 +1,9 @@
+<div class="product">
+  <img class="product-thumb" src="{{product.hero}}" />
+  <h5 class="product-name"><span class="hilite">{{product.hilite}}</span> {{product.name}}</h5>
+  <h6 class="product-teaser">{{product.teaser | truncate: 65}}</h6>
+  <div class="clearfix">
+    <div class="left">{{product.price}}</div>
+    <div class="right"><a href="{{product.url}}">Details</a></div>
+  </div>
+</div>
