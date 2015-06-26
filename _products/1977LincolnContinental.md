@@ -3,7 +3,10 @@ layout: product
 hilite: 1977
 name: Lincoln Continental
 price: $000,000,000
-hero: /images/1467043.jpg
+images:
+  - /images/1467043.jpg
+  - /images/1467043.jpg
+  - /images/1467043.jpg
 
 details:
 - type: General

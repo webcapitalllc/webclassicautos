@@ -3,7 +3,10 @@ layout: product
 hilite: 1969
 name: Maserati Ghibli
 price: $000,000,000
-hero: /images/1467043.jpg
+images:
+  - /images/1467043.jpg
+  - /images/1467043.jpg
+  - /images/1467043.jpg
 
 details:
 - type: General

@@ -19,6 +19,14 @@
 }
 
 .feature-slider-info {
+  a {
+    color: $white;
+    font-weight: $font-weight-normal;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
   font-size: $font-size-large;
 
   small {

@@ -4,17 +4,15 @@ layout: default
 
 <div class="feature-slider">
   <div class="feature-slider-slides">
-    <div><img src="/images/1467043.jpg" /></div>
-    <div><img src="/images/1467043.jpg" /></div>
-    <div><img src="/images/1467043.jpg" /></div>
+    {% for product in site.products limit:3 %}
+      <a href="{{product.url}}" data-product-price={{product.price}} data-product-hilite={{product.hilite}} data-product-name={{product.name}} data-product-link={{product.url}}><img src="{{product.images[0]}}" /></a>
+    {% endfor %}
   </div>
 
   <div class="feature-slider-bar">
     <div class="row">
       <div class="columns small-6">
-        <div class="feature-slider-info">
-          1947 Aston Martin <small>$200,000</small>
-        </div>
+        <div class="feature-slider-info"></div>
       </div>
 
       <div class="columns small-6">
