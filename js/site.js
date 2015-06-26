@@ -8,18 +8,18 @@ $(document).ready(function(){
       $featureSliderInfo = $('.feature-slider-info');
 
   var $featureSlider = $('.feature-slider-slides')
-      .on('init', onInit)
-      .on('beforeChange', sliderWillChange)
+      .on('init', onFeatureSliderInit)
+      .on('beforeChange', featureSliderWillChange)
       .slick({
         autoplay: true,
         arrows: false
       });
 
-  function onInit(event, slick){
+  function onFeatureSliderInit(event, slick){
     sliderWillChange(event, slick, slick.currentSlide, slick.currentSlide);
   }
 
-  function sliderWillChange(event, slick, currentSlide, nextSlide){
+  function featureSliderWillChange(event, slick, currentSlide, nextSlide){
     var data = $(slick.$slides[nextSlide]).data();
 
     $featureSliderNav.eq(currentSlide).find('button').removeClass('is-active');
@@ -30,6 +30,27 @@ $(document).ready(function(){
 
   $featureSliderNav.on('click', 'button', function(){
     $featureSlider.slick('slickGoTo',$(this).parent().index());
+  });
+
+
+
+  // Product Gallery
+  $('.product-gallery-heros').slick({
+    asNavFor: '.product-gallery-thumbs',
+    nextArrow: $('.product-gallery .next-arrow'),
+    prevArrow: $('.product-gallery .prev-arrow')
+  });
+
+  var $productGalleryThumbs = $('.product-gallery-thumbs')
+    .slick({
+      slidesToShow: $('.product-gallery-thumbs li').length,
+      asNavFor: '.product-gallery-heros',
+      focusOnSelect: true,
+      arrows: false
+    });
+
+  $productGalleryThumbs.find('li a').on('click', function(e){
+    e.preventDefault();
   });
 
 });
