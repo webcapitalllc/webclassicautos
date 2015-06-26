@@ -75,10 +75,11 @@ $include-html-global-classes: $include-html-classes;
 // Web Capital Settings
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 $gray: #2d2d2d;
+$gray-medium: #606363;
 $gray-light: #f2f2f2;
 $blue: #0032a0;
 $blue-shade: #003265;
-$blue-tint: tint($blue, 25%);
+$blue-tint: #1C5EF0;
 $white: #fff;
 
 $base-font-size: rem-calc(14);
@@ -93,7 +94,7 @@ $font-size-large: rem-calc(18);
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-// $row-width: rem-calc(1000);
+$row-width: rem-calc(1200);
 // $total-columns: 12;
 // $column-gutter: rem-calc(30);
 
@@ -106,6 +107,8 @@ $font-family-sans-serif: "Fira Sans", "Helvetica Neue", Helvetica, Roboto, Arial
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
+$font-weight-light: 300;
+$font-weight-medium: 500;
 // $font-weight-normal: normal;
 // $font-weight-bold: bold;
 
@@ -130,7 +133,9 @@ $font-family-sans-serif: "Fira Sans", "Helvetica Neue", Helvetica, Roboto, Arial
 // $black       : #000000;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: $blue;
+$primary-color-tint: $blue-tint;
+$primary-color-shade: $blue-shade;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -225,7 +230,7 @@ $body-font-color: $gray;
 
 // We use these to control header font styles
 // $header-font-family: $body-font-family;
-// $header-font-weight: $font-weight-normal;
+$header-font-weight: $font-weight-light;
 // $header-font-style: normal;
 // $header-font-color: $jet;
 // $header-line-height: 1.4;
@@ -284,8 +289,8 @@ $body-font-color: $gray;
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
+//$anchor-font-color: $primary-color;
+$anchor-font-color-hover: $primary-color-tint;
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;

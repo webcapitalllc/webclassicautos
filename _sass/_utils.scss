@@ -1,5 +1,5 @@
 @mixin max-width-container(){
-  max-width: rem-calc(1200);
+  max-width: $row-width;
   margin-left: auto;
   margin-right: auto;
   padding-left: $column-gutter/2;

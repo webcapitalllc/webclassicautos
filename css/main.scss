@@ -8,9 +8,11 @@
 
 @import "../bower_components/slick.js/slick/slick.scss";
 
+@import "base";
 @import "layout";
 
 @import "components/feature-slider/feature-slider";
+@import "components/product/product";
 @import "components/site-footer/site-footer";
 @import "components/top-bar/top-bar";
 

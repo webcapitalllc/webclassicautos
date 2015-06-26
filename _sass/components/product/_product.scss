@@ -1,0 +1,29 @@
+.products-header {
+  margin-bottom: rem-calc(20);
+}
+
+.product {
+  background:$white;
+  padding: rem-calc(20);
+}
+
+.product-thumb {
+  margin-bottom: rem-calc(20);
+}
+
+.product-name {
+  margin-bottom: rem-calc(5);
+  margin-top: 0;
+
+  .hilite {
+    font-weight: $font-weight-medium;
+  }
+}
+
+.product-desc {
+  color: $gray-medium;
+  font-size: $base-font-size;
+  font-weight: $font-weight-normal;
+  margin-bottom: rem-calc(20);
+  margin-top: 0;
+}
