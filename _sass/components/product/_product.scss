@@ -75,12 +75,24 @@ $product-gallery-thumbs-margin-bottom: rem-calc(40);
 
   .next-arrow,
   .prev-arrow {
-    width: $product-gallery-arrow-size;
-    height: $product-gallery-arrow-size;
+    background-color: transparent;
+    margin-bottom: 0;
+    margin-top: $product-gallery-arrow-size/-2;
+    padding: 0;
     position: absolute;
     top: 50%;
-    margin-top: $product-gallery-arrow-size/-2;
+    width: $product-gallery-arrow-size;
     z-index: 10;
+
+    -webkit-transition: opacity 300ms;
+    transition: opacity 300ms;
+
+    opacity: 0.5;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
   }
 
   .next-arrow {
