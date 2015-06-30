@@ -16,7 +16,7 @@ $(document).ready(function(){
       });
 
   function onFeatureSliderInit(event, slick){
-    sliderWillChange(event, slick, slick.currentSlide, slick.currentSlide);
+    featureSliderWillChange(event, slick, slick.currentSlide, slick.currentSlide);
   }
 
   function featureSliderWillChange(event, slick, currentSlide, nextSlide){
