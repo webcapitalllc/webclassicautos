@@ -63,18 +63,23 @@
 }
 
 // Product Image Gallery
+$product-gallery-thumb-gutter: rem-calc(12);
+$product-gallery-arrow-size: rem-calc(40);
+$product-gallery-margin-bottom: rem-calc(10);
+$product-gallery-thumbs-margin-bottom: rem-calc(40);
+
 .product-gallery {
-  margin-bottom: rem-calc(10);
+  margin-bottom: $product-gallery-thumbs-margin-bottom;
   margin-top: rem-calc(10);
   position: relative;
 
   .next-arrow,
   .prev-arrow {
-    width: rem-calc(40);
-    height: rem-calc(40);
+    width: $product-gallery-arrow-size;
+    height: $product-gallery-arrow-size;
     position: absolute;
     top: 50%;
-    margin-top: rem-calc(-20);
+    margin-top: $product-gallery-arrow-size/-2;
   }
 
   .next-arrow {
@@ -84,48 +89,48 @@
   .prev-arrow {
     left: rem-calc(20);
   }
+
+  .slick-dots {
+    @include clearfix;
+    display: none !important;
+    margin: rem-calc(10) 0 $product-gallery-thumbs-margin-bottom $product-gallery-thumb-gutter*-1;
+    padding: 0;
+    list-style-type: none;
+
+    @media #{$medium-up} {
+      display: block !important;
+    }
+
+    li {
+      display: block;
+      float: left;
+      width: 10%;
+      padding-left: $product-gallery-thumb-gutter;
+    }
+  }
 }
 
-.product-gallery-thumbs {
-  margin: 0 0 rem-calc(40);
+.product-gallery-thumb {
+  margin-bottom: 0;
+  display: block;
   padding: 0;
-  list-style-type: none;
+  border:2px solid transparent;
+  background-color: transparent;
 
-  @include clearfix;
+  &:hover,
+  &:focus {
+    border-color: $primary-color-tint;
+    outline:none;
+  }
 
-  li {
-    max-width: 10%;
-    display: block;
-    float: left;
-    padding-left: rem-calc(6);
-    padding-right: rem-calc(6);
+  &:active {
+    border-color: $primary-color-shade;
+  }
 
-    &:first-of-type {
-      padding-left: 0;
-    }
-
-    &:last-of-type {
-      padding-right: 0;
-    }
-
-    a {
-      display: block;
-      border:2px solid transparent;
-
-      &:hover,
-      &:focus {
-        border-color: $primary-color-tint;
-        outline:none;
-      }
-    }
-
-    &.slick-active {
-      a {
-        border-color: $primary-color;
-        &:hover {
-          border-color: $primary-color-tint;
-        }
-      }
+  @at-root .slick-active & {
+    border-color: $primary-color;
+    &:hover {
+      border-color: $primary-color-tint;
     }
   }
 }

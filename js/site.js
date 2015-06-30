@@ -38,19 +38,11 @@ $(document).ready(function(){
   $('.product-gallery-heros').slick({
     asNavFor: '.product-gallery-thumbs',
     nextArrow: $('.product-gallery .next-arrow'),
-    prevArrow: $('.product-gallery .prev-arrow')
-  });
-
-  var $productGalleryThumbs = $('.product-gallery-thumbs')
-    .slick({
-      slidesToShow: $('.product-gallery-thumbs li').length,
-      asNavFor: '.product-gallery-heros',
-      focusOnSelect: true,
-      arrows: false
-    });
-
-  $productGalleryThumbs.find('li a').on('click', function(e){
-    e.preventDefault();
+    prevArrow: $('.product-gallery .prev-arrow'),
+    dots: true,
+    customPaging: function(slider, i) {
+      return '<button type="button" class="product-gallery-thumb"><img src="' + $(slider.$slides[i]).find('img').attr('src') + '" /></button>';
+    }
   });
 
 });

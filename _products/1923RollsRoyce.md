@@ -7,6 +7,13 @@ images:
   - /images/1467043.jpg
   - /images/1467043.jpg
   - /images/1467043.jpg
+  - /images/1467043.jpg
+  - /images/1467043.jpg
+  - /images/1467043.jpg
+  - /images/1467043.jpg
+  - /images/1467043.jpg
+  - /images/1467043.jpg
+  - /images/1467043.jpg
 
 details:
 - type: General
