@@ -62,6 +62,13 @@
   }
 }
 
+.product-buy-btn {
+  margin-bottom: 0;
+  @media #{$medium-up} {
+    margin-top: 5px;
+  }
+}
+
 // Product Image Gallery
 $product-gallery-thumb-gutter: rem-calc(12);
 $product-gallery-arrow-size: rem-calc(40);
