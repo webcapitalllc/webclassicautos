@@ -80,6 +80,7 @@ $product-gallery-thumbs-margin-bottom: rem-calc(40);
     position: absolute;
     top: 50%;
     margin-top: $product-gallery-arrow-size/-2;
+    z-index: 10;
   }
 
   .next-arrow {
