@@ -2,15 +2,6 @@
   background: $white;
   border-bottom: 1px solid darken($body-bg, 3%);
   margin-bottom: rem-calc(40);
-}
-
-.site-header-landing {
-  background: none;
-  border-bottom: none;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 888;
 
   .top-bar-section {
     @media #{$topbar-media-query} {
@@ -22,4 +13,13 @@
       }
     }
   }
+}
+
+.site-header-landing {
+  background: none;
+  border-bottom: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 888;
 }
