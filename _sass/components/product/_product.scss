@@ -60,14 +60,31 @@
   small {
     margin-right: rem-calc(10);
   }
+
+  .product-buy-btn {
+    float: right;
+    margin-left: rem-calc(20);
+
+    @media #{$medium-up} {
+      position: relative;
+      top: -5px;
+      float: none;
+    }
+  }
+}
+
+.product-details-title {
+  .product-buy-btn {
+    @media #{$medium-up} {
+      margin-top: 5px;
+    }
+  }
 }
 
 .product-buy-btn {
   margin-bottom: 0;
-  @media #{$medium-up} {
-    margin-top: 5px;
-  }
 }
+
 
 // Product Image Gallery
 $product-gallery-thumb-gutter: rem-calc(12);
