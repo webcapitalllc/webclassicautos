@@ -5,7 +5,7 @@ layout: default
 <div class="feature-slider">
   <div class="feature-slider-slides">
     {% for product in site.products limit:3 %}
-      <a href="{{product.url}}" data-product-price={{product.price}} data-product-hilite={{product.hilite}} data-product-name={{product.name}} data-product-link={{product.url}}><img src="{{product.images[0]}}" /></a>
+      <a href="{{product.url}}" data-product-price="{{product.price}}" data-product-hilite="{{product.hilite}}" data-product-name="{{product.name}}" data-product-link="{{product.url}}"><img src="{{product.images[0]}}" /></a>
     {% endfor %}
   </div>
 
